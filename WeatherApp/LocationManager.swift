@@ -21,11 +21,9 @@ class LocationManager : NSObject,  CLLocationManagerDelegate {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
-        NSLog("started updating locations")
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations: [CLLocation]) {
-        NSLog("got location data")
         if didUpdateLocations.count < 1 {
             return
         }

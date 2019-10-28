@@ -30,8 +30,7 @@ List of features ready and TODOs for future development
 * Simple UI and app icon
 * Saving a list of cities to fetch the weather for
 
-To-do list:
-*Nothing. It's perfect.
+To-do list: Nothing. It's perfect.
 
 ## Status
 Project is: _finished_

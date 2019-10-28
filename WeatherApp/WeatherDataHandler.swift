@@ -79,7 +79,6 @@ class WeatherDataHandler : NSObject, NSCoding {
             completionHandler(cachedWeather)
         } else {
             weatherDataFetcher.getCityWeather(cityName: cityName, completionHandler: { (weatherData) in
-                NSLog("got into the callback function")
                 if let weatherData = weatherData, let weatherResponse = self.parseWeatherData(weatherData: weatherData) {
                     self.saveWeatherToCache(cityName: cityName, weather: weatherResponse)
                     completionHandler(weatherResponse)
